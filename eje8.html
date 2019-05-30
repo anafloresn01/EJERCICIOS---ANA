@@ -1,0 +1,294 @@
+ <!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title> .:: EJERCICIOS ::. </title>
+    <link rel="stylesheet" href="css/estiloprincipal.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/detalles.css">
+
+  </head>
+  <body>
+  <div class="contenedor">
+<header>
+  <img class="centrado" src="imagenes/bienvenidos.png" >
+
+<div class="slider">
+  <ul>
+
+  </ul>
+</div>
+</header>
+<nav>
+  <ul>
+    <li><a class="boton redondo " href="eje1.html">EJERCICIO 1</a></li>
+    <li><a class="boton redondo " href="eje2.html">EJERCICIO 2</a></li>
+    <li><a class="boton redondo " href="eje3.html">EJERCICIO 3</a></li>
+    <li><a class="boton redondo " href="eje4.html">EJERCICIO 4</a></li>
+    <li><a class="boton redondo " href="eje5.html">EJERCICIO 5</a></li>
+    <li><a class="boton redondo " href="eje6.html">EJERCICIO 6</a></li>
+    <li><a class="boton redondo " href="eje7.html">EJERCICIO 7</a></li>
+    <li><a class="boton redondo " href="eje8.html">EJERCICIO 8</a></li>
+    <li><a class="boton redondo " href="eje9.html">EJERCICIO 9</a></li>
+    <li><a class="boton redondo " href="eje10.html">EJERCICIO 10</a></li>
+    <li><a class="boton redondo " href="eje11.html">EJERCICIO 11</a></li>
+    <li><a class="boton redondo " href="eje12.html">EJERCICIO 12</a></li>
+    <li><a class="boton redondo " href="examen.html">EXAMEN</a></li>
+  </ul>
+</nav>
+<section>
+  <article >
+    <h1> PROGRAMACIÓN WEB - EJERCICIOS UNIDAD 3 </h1>
+    <h2> EJERCICIO 8: </h2>
+
+    <p> La empresa Avianca está interesada en un programa que permita evaluar el pago de un cliente.
+      Se cuenta con el nombre completo, cédula,</p>
+      <p>tipo de boleto:  1. primera clase, 2. segunda clase, 3. tercera clase,</p>
+        <p>destino:       1.Europa, 2. América del norte, 3. América del sur, 4. islas del caribe ,</p>
+          <p> zona:       1.fumadores 2. no fumadores.</p>
+            <p>Para el valor básico del boleto se calcula con base a: </p>
+            <table>
+              <tr>
+                <th></th>
+                <th>Europa</th>
+                <th>Amer. Norte</th>
+                <th>Amer. Sur</th>
+                <th>Islas Caribe</th>
+              </tr>
+              <tr>
+                <th>Primera Clase</th>
+                <th>$2.500.000</th>
+                <th>$2.000.000</th>
+                <th>$1.000.000</th>
+                <th>$800.000</th>
+              </tr>
+              <tr>
+                <th>Segunda Clase</th>
+                <th>$2.100.000</th>
+                <th>$1.700.000</th>
+                <th>$900.000</th>
+                <th>$700.000</th>
+              </tr>
+              <tr>
+                <th>Tercera Clase</th>
+                <th>$1.900.000</th>
+                <th>$1.400.000</th>
+                <th>$750.000</th>
+                <th>$500.000</th>
+              </tr>
+            </table>
+
+    <p>Cabe mencionar que si el cliente ha comprado boleto en primera clase y se encuentra en zona fumadora recibe en descuento del 10% sobre el
+      valor básico del boleto y en caso de No fumadores le dan un recargo del 8% sobre el valor del boleto.
+    Para los clientes que viajen en segunda clase o tercera clase y se encuentre en zona de fumadores le dan un descuento del 5% y para el caso de no
+     fumadores un recargo del 8% sobre el valor del boleto. Se debe mostrar el nombre del cliente, valor total del boleto, el valor del descuento o
+     valor recargo si lo tiene y el total a pagar.</p>
+     <h1>Recopilación de los datos de la aerolínea "AVIACA"</h1>
+     <div class="body">
+       <div class="opcion">
+         <h2>Datos Del Comprador</h2>
+         <form name="datosPersonales">
+           Nombres:<br>
+           <input type="text" name="nombre" id="nombre" placeholder="Su nombre " required="required"><br>
+           Apellidos:<br>
+           <input type="text" name="apellido" id="apellido" placeholder="Su apellido " required="required">
+         </form>
+       </div>
+       <div class="opcion">
+         <h2>Cédula</h2>
+         <form name="cedula">
+           Cédula:<br>
+           <input type="text" name="datoCedula" id="datoCedula" placeholder="Su cedula " required><br>
+         </form>
+       </div>
+       <div class="opcion">
+         <h2>Tipo De Boleto</h2>
+         <form name="clases">
+           <input type="radio" name="clase" value="primera" checked>Primera Clase<br>
+           <input type="radio" name="clase" value="segunda" >Segunda Clase<br>
+           <input type="radio" name="clase" value="tercera" >Tercera Clase
+         </form>
+       </div>
+       <div class="opcion">
+         <h2>Destino</h2>
+         <form name="region">
+           <input type="radio" name="reg" value="euro" checked>Europa<br>
+           <input type="radio" name="reg" value="norte">Amer. Norte<br>
+           <input type="radio" name="reg" value="sur">Amer. Sur <br>
+           <input type="radio" name="reg" value="caribe">Íslas Caribe
+         </form>
+       </div>
+       <div class="opcion">
+         <h2>Tipo De Zona</h2>
+         <form name="zona">
+           <input type="radio" name="fumar" value="1" checked>Fumadora<br>
+           <input type="radio" name="fumar" value="2">No Fumadora
+         </form>
+       </div>
+       <div class="opcion">
+         <input type="button" name="btn1" value="Enviar" onclick="consulta()">
+       </div>
+  </div>
+      <script type="text/javascript">
+        function consulta() {
+          var nombre = document.getElementById('nombre').value;
+          var apellido = document.getElementById('apellido').value;
+          var cedula = document.getElementById('datoCedula').value;
+          var clase = getRadioButtonSelectedValue(document.clases.clase);
+          var region = getRadioButtonSelectedValue(document.region.reg);
+          var zona = getRadioButtonSelectedValue(document.zona.fumar);
+          var valorTotalBoleto = obtenerValorBoleto(clase, region);
+          var descuento = calculoDescuento(clase, zona, valorTotalBoleto);
+          var recargo = calculoRecargo(clase, zona, valorTotalBoleto);
+          var totalAPagar = valorTotalBoleto-descuento+recargo;
+          console.log(nombre);
+          console.log(apellido);
+          console.log(cedula);
+          console.log(clase);
+          console.log(region);
+          console.log(zona);
+          console.log(valorTotalBoleto);
+          console.log(descuento);
+          console.log(recargo);
+          console.log(totalAPagar);
+          document.write('<p>Nombre: ' + nombre + ' '+apellido+'. </p>');
+          document.write('<p>Cedula: ' + cedula +'</p>');
+          document.write('<p>Valor Total Del Boleto: $' + valorTotalBoleto +'</p>');
+          document.write('<p>Valor Del Descueto: $' + descuento +'</p>');
+          document.write('<p>Valor Del Recargo: $' + recargo +'</p>');
+          document.write('<p>Total a Pagar: $' + totalAPagar +'</p>');
+            document.write('<img class src="imagenes/avion.jpg" width="500"  height="300" align="center" imagen.align="middle">');
+        }
+
+        function getRadioButtonSelectedValue(ctrl) {
+          for (i = 0; i < ctrl.length; i++)
+            if (ctrl[i].checked) return ctrl[i].value;
+        }
+
+        function obtenerValorBoleto(clase, region) {
+          var valorBoleto = 0.0;
+          if (clase == "primera") {
+            if (region == "euro") {
+              valorBoleto = 2500000;
+              valorBoleto = parseFloat(valorBoleto);
+            } else {
+              if (region == "norte") {
+                valorBoleto = 2000000;
+                valorBoleto = parseFloat(valorBoleto);
+              } else {
+                if (region == "sur") {
+                  valorBoleto = 1000000;
+                  valorBoleto = parseFloat(valorBoleto);
+                } else {
+                  valorBoleto = 800000;
+                  valorBoleto = parseFloat(valorBoleto);
+                }
+              }
+            }
+          }
+          if (clase == "segunda") {
+            if (region == "euro") {
+              valorBoleto = 2,100.000;
+              valorBoleto = parseFloat(valorBoleto);
+            } else {
+              if (region == "norte") {
+                valorBoleto = 1700000;
+                valorBoleto = parseFloat(valorBoleto);
+              } else {
+                if (region == "sur") {
+                  valorBoleto = 900000;
+                  valorBoleto = parseFloat(valorBoleto);
+                } else {
+                  valorBoleto = 700000;
+                  valorBoleto = parseFloat(valorBoleto);
+                }
+              }
+            }
+          }
+          if (clase == "tercera") {
+            if (region == "euro") {
+              valorBoleto = 1900000;
+              valorBoleto = parseFloat(valorBoleto);
+            } else {
+              if (region == "norte") {
+                valorBoleto = 1400000;
+                valorBoleto = parseFloat(valorBoleto);
+              } else {
+                if (region == "sur") {
+                  valorBoleto = 750000;
+                  valorBoleto = parseFloat(valorBoleto);
+                } else {
+                  valorBoleto = 500000;
+                  valorBoleto = parseFloat(valorBoleto);
+                }
+              }
+            }
+          }
+          return valorBoleto;
+
+        }
+
+        function calculoDescuento(clase, zona, valorTotalBoleto) {
+          if (clase == "primera"
+            && zona == 1) {
+            return (valorTotalBoleto) * (.10);
+          } else {
+            if (clase == "segunda"
+              || clase == "tercera"
+              && zona == 1) {
+              return (valorTotalBoleto) * (.05);
+            } else {
+              return 0.0;
+            }
+          }
+        }
+
+        function calculoRecargo(clase, zona, valorTotalBoleto) {
+          if (clase == "primera"
+            && zona == 2) {
+            return (valorTotalBoleto) * (.08);
+          } else {
+            if (clase == "segunda"
+              || clase == "tercera"
+              && zona == 2) {
+              return (valorTotalBoleto) * (.08);
+            } else {
+              return 0.0;
+            }
+          }
+
+        }
+
+      </script>
+
+
+    </article>
+  </section>
+
+
+<footer>
+  <div align= "center">
+<nav>
+  <ul>
+    <li><a class="enlace-footer" href="eje1.html">EJERCICIO 1</a></li>
+    <li><a class="enlace-footer" href="eje2.html">EJERCICIO 2</a></li>
+    <li><a class="enlace-footer" href="eje3.html">EJERCICIO 3</a></li>
+    <li><a class="enlace-footer" href="eje4.html">EJERCICIO 4</a></li>
+    <li><a class="enlace-footer" href="eje5.html">EJERCICIO 5</a></li>
+    <li><a class="enlace-footer" href="eje6.html">EJERCICIO 6</a></li>
+    <li><a class="enlace-footer" href="eje7.html">EJERCICIO 7</a></li>
+    <li><a class="enlace-footer" href="eje8.html">EJERCICIO 8</a></li>
+    <li><a class="enlace-footer" href="eje9.html">EJERCICIO 9</a></li>
+    <li><a class="enlace-footer" href="eje10.html">EJERCICIO 10</a></li>
+    <li><a class="enlace-footer" href="eje11.html">EJERCICIO 11</a></li>
+    <li><a class="enlace-footer" href="eje12.html">EJERCICIO 12</a></li>
+    <li><a class="enlace-footer" href="examen.html">EXAMEN </a></li>
+
+  </ul>
+</nav>
+</div>
+
+</footer>
+</div>
+  </body>
+</html>

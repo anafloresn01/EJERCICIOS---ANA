@@ -1,0 +1,210 @@
+ <!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title> .:: EXAMEN ::. </title>
+    <link rel="stylesheet" href="css/estiloprincipal.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/detalles.css">
+
+  </head>
+  <body>
+  <div class="contenedor">
+<header>
+  <img class="centrado" src="imagenes/bienvenidos.png" >
+
+<div class="slider">
+  <ul>
+
+  </ul>
+</div>
+</header>
+<nav>
+  <ul>
+    <li><a class="boton redondo " href="eje1.html">EJERCICIO 1</a></li>
+    <li><a class="boton redondo " href="eje2.html">EJERCICIO 2</a></li>
+    <li><a class="boton redondo " href="eje3.html">EJERCICIO 3</a></li>
+    <li><a class="boton redondo " href="eje4.html">EJERCICIO 4</a></li>
+    <li><a class="boton redondo " href="eje5.html">EJERCICIO 5</a></li>
+    <li><a class="boton redondo " href="eje6.html">EJERCICIO 6</a></li>
+    <li><a class="boton redondo " href="eje7.html">EJERCICIO 7</a></li>
+    <li><a class="boton redondo " href="eje8.html">EJERCICIO 8</a></li>
+    <li><a class="boton redondo " href="eje9.html">EJERCICIO 9</a></li>
+    <li><a class="boton redondo " href="eje10.html">EJERCICIO 10</a></li>
+    <li><a class="boton redondo " href="eje11.html">EJERCICIO 11</a></li>
+    <li><a class="boton redondo " href="eje12.html">EJERCICIO 12</a></li>
+    <li><a class="boton redondo " href="examen.html">EXAMEN</a></li>
+  </ul>
+</nav>
+<section>
+  <article >
+    <h1> PROGRAMACIÓN WEB - EJERCICIOS UNIDAD 3 </h1>
+    <h2> EXAMEN DE LA UNIDAD </h2>
+
+    <p> La empresa coca cola company socita un sistema que determine los díaas de vacaciones a los que tiene derecho un trabajador, tomando en cuenta
+    las siguientes características. </p>
+
+    <p>Existen tres departamentos dentro de la empresa con su respectiva clave:</p>
+    <ul>
+      <li>
+        <p> 1. Departamento de atención  al cliente (clave 1 )</p>
+      </li>
+      <li>
+        <p> 2. Departamento de logística (clave 2)</p>
+      </li>
+      <li>
+        <p> 3. Gerencia (clave 3)</p>
+      </li>
+    </ul>
+
+  <p>Trabajadores con clave 1 (Atención al cliente):</p>
+
+<ul>
+  <li>
+    <p> Con 1 año de servicio, reciben 6 días de vacaciones</p>
+  </li>
+  <li>
+    <p>Con 2 a 6 años de servicio, reciben 14 días de vacaciones </p>
+  </li>
+  <li>
+      <p>Con 7 años de servicio, reciben 20 días de vacaciones </p>
+  </li>
+</ul>
+
+  <p>Trabajadores con clave 2 (Departamento de logística):</p>
+<ul>
+  <li>
+      <p> Con 1 año de servicio, recibenn 7 días de vacaciones</p>
+  </li>
+<li>
+    <p>Con 2 a 6 años de servicio, reciben 15 días de vacaciones </p>
+</li>
+<li>
+  <p>Con 7 años de servicio, reciben 22 días de vacaciones </p>
+</li>
+</ul>
+
+  <p>Trabajadores con clave 3 (Gerencia):</p>
+<ul>
+  <li>
+      <p> Con 1 año de servicio, recibenn 10 días de vacaciones</p>
+  </li>
+  <li>
+    <p>Con 2 a 6 años de servicio, reciben 20 días de vacaciones </p>
+  </li>
+  <li>
+    <p>Con 7 años de servicio, reciben 30 días de vacaciones </p> <br><br>
+  </li>
+</ul>
+
+<script type="text/javascript">
+  var opc, nombre, años;
+
+  nombre=prompt('El nombre del trabajador es :', '');
+
+    opc=prompt('¿De qué departamento es el trabajador?'+'\n1. Atención al cliente \n2. Departamento de logística  \n3. Gerencia');
+    opc=parseInt(opc);
+    switch (opc) {
+      case 1:
+      document.write('El trabajador está en el departamento con: clave 1'+'<br>');
+        document.write('<br>');
+      años=prompt('¿Cuántos años lleva en la empresa?','');
+      if (años==1){
+      document.write('El nombre del trabajador es: '+nombre+'<br>');
+        document.write('<br>');
+      document.write('El trabajador tiene 6 días para vacacionar'+'<br>');
+    }
+    else if (años<=6){
+        document.write('El nombre del trabajador es: '+nombre+'<br>');
+          document.write('<br>');
+          document.write('El trabajador tiene 14 días para vacacionar'+'<br>');
+
+    }
+    else  if(años>=7) {
+        document.write('El nombre del trabajador es: '+nombre+'<br>');
+          document.write('<br>');
+      document.write('El trabajador tiene 20 días para vacacionar'+'<br>');
+
+    }
+        break;
+        case 2:
+        document.write('El trabajador esta en el departamento con: clave 2'+'<br>');
+          document.write('<br>');
+        años=prompt('¿Cuántos años lleva en la empresa?','');
+        if (años==1){
+            document.write('El nombre del trabajador es: '+nombre+'<br>');
+              document.write('<br>');
+        document.write('El trabajador tiene 7 días para vacacionar'+'<br>');
+      }
+      else if (años<=6){
+          document.write('El nombre del trabajador es: '+nombre+'<br>');
+            document.write('<br>');
+            document.write('El trabajador tiene 15 dÍas para vacacionar'+'<br>');
+
+      }
+      else if (años>=7) {
+          document.write('El nombre del trabajador es: '+nombre+'<br>');
+            document.write('<br>');
+        document.write('El trabajador tiene 22 dias para vacacionar'+'<br>');
+
+      }
+          break;
+          case 3:
+          document.write('El trabajador esta en el departamento con: clave 3'+'<br>');
+            document.write('<br>');
+          años=prompt('¿Cuántos años lleva en la empresa?','');
+          if (años==1){
+              document.write('El nombre del trabajador es: '+nombre+'<br>');
+                document.write('<br>');
+          document.write('El trabajador tiene 10 días para vacacionar'+'<br>');
+        }
+        else if (años<=6){
+            document.write('El nombre del trabajador es: '+nombre+'<br>');
+              document.write('<br>');
+              document.write('El trabajador tiene 20 días para vacacionar'+'<br>');
+
+        }
+        else if (años>=7) {
+            document.write('El nombre del trabajador es: '+nombre+'<br>');
+              document.write('<br>');
+          document.write('El trabajador tiene 30 días para vacacionar'+'<br>');
+
+        }
+      default:
+
+    }
+    document.write('<br>');
+    document.write('<img class src="imagenes/vacaciones.jpg" width="400"  height="400" align="center" imagen.align="middle">');
+    document.write('<br>');
+  </script>
+
+    </article>
+  </section>
+
+
+<footer>
+  <div align= "center">
+<nav>
+  <ul>
+    <li><a class="enlace-footer" href="eje1.html">EJERCICIO 1</a></li>
+    <li><a class="enlace-footer" href="eje2.html">EJERCICIO 2</a></li>
+    <li><a class="enlace-footer" href="eje3.html">EJERCICIO 3</a></li>
+    <li><a class="enlace-footer" href="eje4.html">EJERCICIO 4</a></li>
+    <li><a class="enlace-footer" href="eje5.html">EJERCICIO 5</a></li>
+    <li><a class="enlace-footer" href="eje6.html">EJERCICIO 6</a></li>
+    <li><a class="enlace-footer" href="eje7.html">EJERCICIO 7</a></li>
+    <li><a class="enlace-footer" href="eje8.html">EJERCICIO 8</a></li>
+    <li><a class="enlace-footer" href="eje9.html">EJERCICIO 9</a></li>
+    <li><a class="enlace-footer" href="eje10.html">EJERCICIO 10</a></li>
+    <li><a class="enlace-footer" href="eje11.html">EJERCICIO 11</a></li>
+    <li><a class="enlace-footer" href="eje12.html">EJERCICIO 12</a></li>
+    <li><a class="enlace-footer" href="examen.html">EXAMEN </a></li>
+
+  </ul>
+</nav>
+</div>
+
+</footer>
+</div>
+  </body>
+</html>

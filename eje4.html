@@ -1,0 +1,118 @@
+ <!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title> .:: EJERCICIOS ::. </title>
+    <link rel="stylesheet" href="css/estiloprincipal.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/detalles.css">
+
+  </head>
+  <body>
+  <div class="contenedor">
+<header>
+  <img class="centrado" src="imagenes/bienvenidos.png" >
+
+<div class="slider">
+  <ul>
+
+  </ul>
+</div>
+</header>
+<nav>
+  <ul>
+    <li><a class="boton redondo " href="eje1.html">EJERCICIO 1</a></li>
+    <li><a class="boton redondo " href="eje2.html">EJERCICIO 2</a></li>
+    <li><a class="boton redondo " href="eje3.html">EJERCICIO 3</a></li>
+    <li><a class="boton redondo " href="eje4.html">EJERCICIO 4</a></li>
+    <li><a class="boton redondo " href="eje5.html">EJERCICIO 5</a></li>
+    <li><a class="boton redondo " href="eje6.html">EJERCICIO 6</a></li>
+    <li><a class="boton redondo " href="eje7.html">EJERCICIO 7</a></li>
+    <li><a class="boton redondo " href="eje8.html">EJERCICIO 8</a></li>
+    <li><a class="boton redondo " href="eje9.html">EJERCICIO 9</a></li>
+    <li><a class="boton redondo " href="eje10.html">EJERCICIO 10</a></li>
+    <li><a class="boton redondo " href="eje11.html">EJERCICIO 11</a></li>
+    <li><a class="boton redondo " href="eje12.html">EJERCICIO 12</a></li>
+    <li><a class="boton redondo " href="examen.html">EXAMEN</a></li>
+
+  </ul>
+</nav>
+<section>
+  <article >
+    <h1> PROGRAMACIÓN WEB - EJERCICIOS UNIDAD 3 </h1>
+    <h2> EJERCICIO 4: ESTRUCTURAS CONDICIONALES</h2>
+    <br>
+    <p>Elabore un script que solicite el nombre de la persona y el tiempo que esta aguanta
+      sumergida en el agua, posteriormente muestra un mensaje con su nombre indicando como esta catalogado,
+      tomando en cuenta lo siguiente.</p>
+
+      <ul>
+        <li><p>Si aguanta 1 minuto bajo el agua, es normal.</p>
+        </li>
+        <li><p>Si aguanta menos de 1 minuto sumergido bajo el agua, tiene ASMA</p>
+        </li>
+        <li><p>Sia aguanta mas de 1 minuto bajo el agua, es Aquaman.</p>
+        </li>
+      </ul>
+
+    <script type="text/javascript">
+      var nombre, tiempo;
+
+      nombre=prompt('¿Cual es tu nombre?','');
+      tiempo=prompt('¿Cuanto tiempo aguantas sumergido en el agua?','');
+
+      if(tiempo==1)
+        {
+          document.write('<br>');
+          document.write(nombre + " eres una persona NORMAL");
+          document.write('<br>');
+          document.write('<br>');
+          document.write('<img src="imagenes/saludable.jpg" width="450"  height="300" align="center" imagen.align="middle">');
+        }
+
+        else if(tiempo<1)
+        {
+          document.write(nombre + " Eres una persona con ASMA");
+            document.write('<br>');
+              document.write('<img src="imagenes/asma.jpg"  width="660"  height="300" align="center" imagen.align="middle">');
+        }
+        else
+        {
+          document.write('<br>');
+          document.write(nombre + " eres AQUAMAN");
+          document.write('<br>');
+          document.write('<br>');
+          document.write('<img  src="imagenes/aquaman.jpg"  width="660"  height="300" align="center" imagen.align="middle">');
+        }
+    </script>
+
+    </article>
+  </section>
+
+
+<footer>
+  <div align= "center">
+<nav>
+  <ul>
+    <li><a class="enlace-footer" href="eje1.html">EJERCICIO 1</a></li>
+    <li><a class="enlace-footer" href="eje2.html">EJERCICIO 2</a></li>
+    <li><a class="enlace-footer" href="eje3.html">EJERCICIO 3</a></li>
+    <li><a class="enlace-footer" href="eje4.html">EJERCICIO 4</a></li>
+    <li><a class="enlace-footer" href="eje5.html">EJERCICIO 5</a></li>
+    <li><a class="enlace-footer" href="eje6.html">EJERCICIO 6</a></li>
+    <li><a class="enlace-footer" href="eje7.html">EJERCICIO 7</a></li>
+    <li><a class="enlace-footer" href="eje8.html">EJERCICIO 8</a></li>
+    <li><a class="enlace-footer" href="eje9.html">EJERCICIO 9</a></li>
+    <li><a class="enlace-footer" href="eje10.html">EJERCICIO 10</a></li>
+    <li><a class="enlace-footer" href="eje11.html">EJERCICIO 11</a></li>
+    <li><a class="enlace-footer" href="eje12.html">EJERCICIO 12</a></li>
+    <li><a class="enlace-footer" href="examen.html">EXAMEN </a></li>
+
+  </ul>
+</nav>
+</div>
+
+</footer>
+</div>
+  </body>
+</html>

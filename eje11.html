@@ -1,0 +1,159 @@
+ <!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title> .:: EJERCICIOS ::. </title>
+    <link rel="stylesheet" href="css/estiloprincipal.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/detalles.css">
+
+  </head>
+  <body>
+  <div class="contenedor">
+<header>
+  <img class="centrado" src="imagenes/bienvenidos.png" >
+
+<div class="slider">
+  <ul>
+
+  </ul>
+</div>
+</header>
+<nav>
+  <ul>
+    <li><a class="boton redondo " href="eje1.html">EJERCICIO 1</a></li>
+    <li><a class="boton redondo " href="eje2.html">EJERCICIO 2</a></li>
+    <li><a class="boton redondo " href="eje3.html">EJERCICIO 3</a></li>
+    <li><a class="boton redondo " href="eje4.html">EJERCICIO 4</a></li>
+    <li><a class="boton redondo " href="eje5.html">EJERCICIO 5</a></li>
+    <li><a class="boton redondo " href="eje6.html">EJERCICIO 6</a></li>
+    <li><a class="boton redondo " href="eje7.html">EJERCICIO 7</a></li>
+    <li><a class="boton redondo " href="eje8.html">EJERCICIO 8</a></li>
+    <li><a class="boton redondo " href="eje9.html">EJERCICIO 9</a></li>
+    <li><a class="boton redondo " href="eje10.html">EJERCICIO 10</a></li>
+    <li><a class="boton redondo " href="eje11.html">EJERCICIO 11</a></li>
+    <li><a class="boton redondo " href="eje12.html">EJERCICIO 12</a></li>
+    <li><a class="boton redondo " href="examen.html">EXAMEN</a></li>
+  </ul>
+</nav>
+<section>
+  <article >
+    <h1> PROGRAMACIÓN WEB - EJERCICIOS UNIDAD 3 </h1>
+    <h2> EJERCICIO 11: </h2>
+
+    <p>En un estadio se tienen 5 diferentes tipos de localidades las cuales se identifícan por una
+clave numérica que es un valor comprendido entre uno y 5.</p>
+<ol>
+  <li>
+    <p>a) Lea los precios</p>
+  </li>
+  <li>
+    <p>b) Lea los datos de las ventas de boletos</p>
+  </li>
+  <li>
+    <p>c) Imprima para cada venta la clave, la cantidad y el importe total de los boletos vendidos en esa venta</p>
+  </li>
+  <li>
+    <p>d) Calcule e imprima la cantidad de boletos vendidos de cada tipo</p>
+  </li>
+  <li>
+    <p>e) Calcule e imprima la recaudación total del estadio.</p>
+  </li>
+</ol>
+  </body>
+  <script type="text/javascript">
+  var opc, cantidad, precio1, precio2, precio3, precio4, precio5, total, total_rec, t1;
+var c1=0, c2=0, c3=0, c4=0, c5=0;
+precio1=parseInt(precio1=prompt('El precio del boleto de la primera localidad es :', ''));
+precio2=parseInt(precio2=prompt('El precio del boleto de la segunda localidad es :', ''));
+precio3=parseInt(precio3=prompt('El precio del boleto de la tercera localidad es :', ''));
+precio4=parseInt(precio4=prompt('El precio del boleto de la cuarta localidad es :', ''));
+precio5=parseInt(precio5=prompt('El precio del boleto de la quinta localidad es :', ''));
+
+compras=prompt('¿En cuántas localidades deseas hacer compras?','');
+
+for (var i = compras; i >=1; i--) {
+
+opc=prompt('¿Qué localidad desea elegir?'+'\n1.1 \n2.2  \n3.3  \n4.4  \n5.5');
+opc=parseInt(opc);
+switch (opc) {
+case 1:
+c1=parseInt(c1=prompt('La cantidad de boletos que se comprarán es:', ''));
+t1=precio1*c1;
+document.write('Has elegido la localidad número 1 con clave:  L1'+'<br>');
+document.write('El número de boletos a comprar de esta localidad es:'+c1+'<br>');
+document.write('El total por la compra de estos boletos es:'+t1+'<br>'+'<br>')
+  break;
+  case 2:
+  c2=parseInt(c2=prompt('La cantidad de boletos que se comprarán es:', ''));
+  document.write('Has elegido la localidad número 2 con clave:  L2'+'<br>');
+  document.write('El número de boletos a comprar de esta localidad es:'+ c2+'<br>');
+  document.write('El total por la compra de estos boletos es:'+(precio2*c2)+'<br>'+'<br>')
+    break;
+    case 3:
+    c3=parseInt(c3=prompt('La cantidad de boletos que se comprarán es:', ''));
+    document.write('Has elegido la localidad número 3 con clave:  L3'+'<br>');
+    document.write('El número de boletos a comprar de esta localidad es:'+ c3+'<br>'+'<br>');
+    document.write('El total por la compra de estos boletos es:'+(precio3*c3)+'<br>'+'<br>')
+      break;
+      case 4:
+      c4=parseInt(c4=prompt('La cantidad de boletos que se comprarán es:', ''));
+      document.write('Has elegido la localidad número 4 con clave:  L4'+'<br>');
+      document.write('El número de boletos a comprar de esta localidad es:'+ c4+'<br>');
+      document.write('El total por la compra de estos boletos es:'+(precio4*c4)+'<br>'+'<br>')
+        break;
+        case 5:
+        c5=parseInt(c5=prompt('La cantidad de boletos que se comprarán es:', ''));
+        document.write('Has elegido la localidad número 5 con clave:  L5'+'<br>');
+        document.write('El número de boletos a comprar de esta localidad es:'+ c5+'<br>');
+        document.write('El total por la compra de estos boletos es:'+(precio5*c5)+'<br>'+'<br>'+'<br>');
+          break;
+default:
+
+}
+(+'<br>')
+}
+
+
+document.write("La cantidad total de boletos comprados en la localidad 1 es: " + c1+'<br>');
+document.write("La cantidad total de boletos comprados en la localidad 2 es: " + c2+'<br>');
+document.write("La cantidad total de boletos comprados en la localidad 3 es: " + c3+'<br>');
+document.write("La cantidad total de boletos comprados en la localidad 4 es: " + c4+'<br>');
+document.write("La cantidad total de boletos comprados en la localidad 5 es: " + c5+'<br>'+'<br>'+'<br>');
+total=(c1*precio1)+(c2*precio2)+(c3*precio3)+(c4*precio4)+(c5*precio5);
+document.write("La cantidad de recaudación total por los boletos vendidos del estadio es= "+total);
+document.write('<br>');
+document.write('<img class src="imagenes/boletos.jpeg" width="300"  height="300" align="center" imagen.align="middle">');
+document.write('<br>');
+  </script>
+
+    </article>
+  </section>
+
+
+<footer>
+  <div align= "center">
+<nav>
+  <ul>
+    <li><a class="enlace-footer" href="eje1.html">EJERCICIO 1</a></li>
+    <li><a class="enlace-footer" href="eje2.html">EJERCICIO 2</a></li>
+    <li><a class="enlace-footer" href="eje3.html">EJERCICIO 3</a></li>
+    <li><a class="enlace-footer" href="eje4.html">EJERCICIO 4</a></li>
+    <li><a class="enlace-footer" href="eje5.html">EJERCICIO 5</a></li>
+    <li><a class="enlace-footer" href="eje6.html">EJERCICIO 6</a></li>
+    <li><a class="enlace-footer" href="eje7.html">EJERCICIO 7</a></li>
+    <li><a class="enlace-footer" href="eje8.html">EJERCICIO 8</a></li>
+    <li><a class="enlace-footer" href="eje9.html">EJERCICIO 9</a></li>
+    <li><a class="enlace-footer" href="eje10.html">EJERCICIO 10</a></li>
+    <li><a class="enlace-footer" href="eje11.html">EJERCICIO 11</a></li>
+    <li><a class="enlace-footer" href="eje12.html">EJERCICIO 12</a></li>
+    <li><a class="enlace-footer" href="examen.html">EXAMEN </a></li>
+
+  </ul>
+</nav>
+</div>
+
+</footer>
+</div>
+  </body>
+</html>
