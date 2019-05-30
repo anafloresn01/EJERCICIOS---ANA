@@ -52,33 +52,33 @@
     <script type="text/javascript">
       var area,opc,base,altura,lado,basemayor,basemenor,radio;
 
-    opc=prompt('¿Que area desea calcular?'+' \n 1.-Triangulo \n 2.-Cuadrado \n 3.-Rectangulo \n 4.-Trapecio \n 5.-Circulo');
+    opc=prompt('¿El área de cuál figura quieres calcular?'+' \n 1.-Triangulo \n 2.-Cuadrado \n 3.-Rectangulo \n 4.-Trapecio \n 5.-Circulo');
     opc=parseInt(opc);
 
     switch (opc) {
       case 1:
-      base=parseInt(base=prompt('Base del Triangulo:',''));
-      altura=parseInt(altura=prompt('Altura del Triangulo:',''));
+      base=parseInt(base=prompt('Ingresa la base del triangulo:',''));
+      altura=parseInt(altura=prompt('Ingresa la altura del triangulo:',''));
       area=base*altura/2;
-      document.write("El area del Triangulo es:"+ area);
+      document.write("El área del Triangulo es:"+ area);
       document.write('<br>');
       document.write('<img  src="imagenes/triangulo.png" width="660"  height="300" align="center" imagen.align="middle">');
 
         break;
 
         case 2:
-        lado=parseInt(lado=prompt('Longuitud de lado Cuadrado:',''));
+        lado=parseInt(lado=prompt('Inngresa la longuitud de un lado del cuadrado:',''));
         area=lado*lado;
-        document.write("El area del Cuadrado es:"+ area);
+        document.write("El área del Cuadrado es:"+ area);
         document.write('<br>');
         document.write('<img  src="imagenes/cuadrado.png" width="660"  height="300" align="center" imagen.align="middle">');
           break;
 
           case 3:
-          base=parseInt(base=prompt('Ingresa la base del Rectangulo:',''));
-          altura=parseInt(altura=prompt('Ingresa la altura del Rectangulo:',''));
+          base=parseInt(base=prompt('Ingresa la base del rectangulo:',''));
+          altura=parseInt(altura=prompt('Ingresa la altura del rectangulo:',''));
           area=base*altura;
-          document.write("El area del Rectangulo es:"+ area);
+          document.write("El área del Rectangulo es:"+ area);
           document.write('<br>');
           document.write('<img  src="imagenes/rectangulo.png" width="660"  height="300" align="center" imagen.align="middle">');
             break;
@@ -88,15 +88,15 @@
             basemenor=parseInt(basemenor=prompt('Ingresa la base menor del Trapecio:',''));
             altura=parseInt(altura=prompt('Ingresa la altura del Trapecio:',''));
             area=((basemayor+basemenor)*altura)/2;
-            document.write("El area del Trapecio es:"+ area);
+            document.write("El área del Trapecio es:"+ area);
             document.write('<br>');
             document.write('<img  src="imagenes/trapecio.png" width="660"  height="300" align="center" imagen.align="middle">');
               break;
 
               case 5:
-              radio=parseInt(radio=prompt('Ingresa el radio del Circulo:',''));
+              radio=parseInt(radio=prompt('Ingresa el radio del circulo:',''));
               area=(3.1416*(radio*radio));
-              document.write("<br> El area del Circulo es:"+ area);
+              document.write("<br> El área del Circulo es:"+ area);
               document.write('<br>');
               document.write('<img  src="imagenes/circulo.png" width="660"  height="300" align="center" imagen.align="middle">');
                 break;
